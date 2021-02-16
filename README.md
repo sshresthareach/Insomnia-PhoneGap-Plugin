@@ -100,8 +100,8 @@ The plugin's  javascript file is brought in automatically. Make sure though you 
 
 ## 3. Usage
 ```html
-<button onclick="window.plugins.insomnia.keepAwake()">keep awake</button>
-<button onclick="window.plugins.insomnia.allowSleepAgain()">allow sleep again</button>
+<button onclick="cordova.plugins.insomnia.keepAwake()">keep awake</button>
+<button onclick="cordova.plugins.insomnia.allowSleepAgain()">allow sleep again</button>
 ```
 An optional successCallback (first argument) will be triggered if the functions succeed. Even calling `keepAwake` twice will fire the successCallback, because the app will respond as expected (being kept awake).
 
