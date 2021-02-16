@@ -17,7 +17,7 @@
   </engines>
 
   <js-module src="www/Insomnia.js" name="Insomnia">
-    <clobbers target="window.plugins.insomnia" />
+    <clobbers target="corodva.plugins.insomnia" />
   </js-module>
 
   <platform name="ios">
@@ -55,7 +55,7 @@
 
   <platform name="browser">
     <js-module src="src/browser/Insomnia.js" name="InsomniaProxy">
-      <merges target="window.plugins.insomnia" />
+      <merges target="cordova.plugins.insomnia" />
     </js-module>
   </platform>
 
