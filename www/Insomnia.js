@@ -10,12 +10,12 @@ Insomnia.prototype.allowSleepAgain = function (successCallback, errorCallback) {
 };
 
 Insomnia.install = function () {
-  if (!window.plugins) {
-    window.plugins = {};
+  if (!cordova.plugins) {
+    cordova.plugins = {};
   }
 
-  window.plugins.insomnia = new Insomnia();
-  return window.plugins.insomnia;
+  cordova.plugins.insomnia = new Insomnia();
+  return cordova.plugins.insomnia;
 };
 
 cordova.addConstructor(Insomnia.install);
